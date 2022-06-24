@@ -3,7 +3,7 @@ import { logout, useGetAccountInfo } from '@elrondnetwork/dapp-core';
 import { Navbar as BsNavbar, NavItem, Nav, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { routeNames } from 'routes';
-import logo from '../../../assets/img/asixplus-navbar-logo.png';
+import logo from '../../../assets/img/asix-menuvar.png';
 import './index.scss';
 
 
