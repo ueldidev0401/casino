@@ -5,11 +5,12 @@ import BTXFinanceHome from './pages';
 import NFTStaking from './pages/NFTStaking';
 import NFTMint from './pages/NFTMint';
 import PreSale from './pages/Presale';
+import Paraswap from './pages/Paraswap';
+import DiceGame from './pages/DiceGame';
 import StakingHome from './pages/Staking';
 import BitXStaking from './pages/Staking/BitXStaking';
 import CpaStaking from './pages/Staking/CpaStaking';
 import DiceStaking from './pages/Staking/DiceStaking';
-import HetoStaking from './pages/Staking/HetoStaking';
 import LpadStaking from './pages/Staking/LpadStaking';
 import MareStaking from './pages/Staking/MareStaking';
 
@@ -39,7 +40,9 @@ export const routeNames = {
   bitlock: '/bitlock',
   createvesting: '/bitlock/create-vesting',
   vaultvesting: '/bitlock/vault-vesting/*',
-  farms: '/farms'
+  farms: '/farms',
+  paraswap: '/paraswap',
+  dicegame: '/dice-game'
 };
 
 const routes: Array<any> = [
@@ -63,7 +66,7 @@ const routes: Array<any> = [
 
   {
     path: routeNames.bitxstaking,
-    title: 'OnePoint Pool',
+    title: 'One Pool',
     component: BitXStaking
   },
 
@@ -133,6 +136,16 @@ const routes: Array<any> = [
     title: 'PreSale',
     component: PreSale
   },
+  { 
+    path: routeNames.paraswap,
+    title: 'Paraswap',
+    component: Paraswap
+  },
+  { 
+    path: routeNames.dicegame,
+    title: 'Dice Game',
+    component: DiceGame
+  }
 ];
 
 const mappedRoutes = routes.map((route) => {
