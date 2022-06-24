@@ -3,7 +3,7 @@ import { logout, useGetAccountInfo } from '@elrondnetwork/dapp-core';
 import { Navbar as BsNavbar, NavItem, Nav, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { routeNames } from 'routes';
-import logo from '../../../assets/img/BTX.png';
+import logo from '../../../assets/img/asixplus-navbar-logo.png';
 import './index.scss';
 
 
@@ -26,7 +26,6 @@ const Navbar = () => {
           to={routeNames.home}
         >
           <img src={logo} />
-          <span>{"BitX Finance"}</span>
         </Link>
 
         <BsNavbar.Toggle aria-controls='responsive-navbar-nav' style={{ background: "#D8D3D3" }} />
