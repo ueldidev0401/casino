@@ -65,10 +65,10 @@ const Navbar = () => {
               Convert
             </Link> */}
             <Link to={routeNames.nftmint} className='custom-navbar-button custom-navbar-normal-button'>
-              NFT Mint
+              Paraswap
             </Link>
             <Link to={routeNames.nftstaking} className='custom-navbar-button custom-navbar-normal-button'>
-              NFT Staking
+              Dice game
             </Link>
             {/* <Link to={routeNames.bitlock} className='custom-navbar-button custom-navbar-normal-button'>
               Bitlock

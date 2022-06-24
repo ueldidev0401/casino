@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import BitlockImg from 'assets/img/bitlock.png';
-import BTXFinanceHomeLogo from 'assets/img/main-logo1.png';
+import BTXFinanceHomeLogo from 'assets/img/main-logo.png';
 import NFTStakingImg from 'assets/img/NFT staking.png';
 import NFTImg from 'assets/img/NFT.png';
 import PresaleImg from 'assets/img/presale.png';
@@ -15,7 +15,7 @@ import { routeNames } from 'routes';
 const BTXFinanceHome = () => {
     return (
         <div className="text-center" style={{ marginBottom: "30px" }}>
-            <img className="responsive logo-animation" src={BTXFinanceHomeLogo} />
+            <img className="responsive logo-animation" src={BTXFinanceHomeLogo} style={{width:"500px"}}/>
             <div className="button-group-bar">
                 <div className="button-group-container">
                     <Row>
@@ -32,7 +32,7 @@ const BTXFinanceHome = () => {
                             <Link to={routeNames.nftmint}>
                                 <div className="BTX-home-but">
                                     <img src={NFTImg} />
-                                    <p>NFT MINT</p>
+                                    <p>Paraswap</p>
                                 </div>
                             </Link>
                         </Col>
@@ -40,7 +40,7 @@ const BTXFinanceHome = () => {
                             <Link to={routeNames.nftstaking}>
                                 <div className="BTX-home-but">
                                     <img src={NFTStakingImg} />
-                                    <p>NFT STAKING</p>
+                                    <p>Dice game</p>
                                 </div>
                             </Link>
                         </Col>
@@ -65,7 +65,7 @@ const BTXFinanceHome = () => {
                             <Link to={routeNames.presale}>
                                 <div className="BTX-home-but">
                                     <img src={PresaleImg} />
-                                    <p>PRESALE</p>
+                                    <p>Private Sale</p>
                                 </div>
                             </Link>
                         </Col>
