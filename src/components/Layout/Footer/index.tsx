@@ -16,7 +16,7 @@ const Footer = () => {
           className='d-flex align-items-center'
           href={SOCIAL_WEBSITE_URL}
         >
-          Made with <HeartIcon className='mx-1' /> by BitX Finance.
+          Made with <HeartIcon className='mx-1' /> by Asixplus.
         </a>
       </div>
     </footer>

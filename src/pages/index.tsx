@@ -4,11 +4,11 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import BitlockImg from 'assets/img/bitlock.png';
 import BTXFinanceHomeLogo from 'assets/img/main-logo.png';
-import NFTStakingImg from 'assets/img/NFT staking.png';
-import NFTImg from 'assets/img/NFT.png';
+import Paraswap from 'assets/img/paraswap.png';
+import Dicegame from 'assets/img/dicegame.png';
 import PresaleImg from 'assets/img/presale.png';
 import StakingImg from 'assets/img/staking.png';
-import FarmImg from 'assets/img/LP Farm.png';
+import FarmImg from 'assets/img/Farm.png';
 
 import { routeNames } from 'routes';
 
@@ -32,7 +32,7 @@ const BTXFinanceHome = () => {
                             {/* <Link to={routeNames.nftmint}> */}
                             <Link to={""}>
                                 <div className="BTX-home-but">
-                                    <img src={NFTImg} />
+                                    <img src={Paraswap} />
                                     <p>Paraswap</p>
                                 </div>
                             </Link>
@@ -41,7 +41,7 @@ const BTXFinanceHome = () => {
                             {/* <Link to={routeNames.nftstaking}> */}
                             <Link to={"/"}>
                                 <div className="BTX-home-but">
-                                    <img src={NFTStakingImg} />
+                                    <img src={Dicegame} />
                                     <p>Dice game</p>
                                 </div>
                             </Link>
