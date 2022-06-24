@@ -57,13 +57,13 @@ const routes: Array<any> = [
 
   {
     path: routeNames.home,
-    title: 'BTX Finance',
+    title: 'Home',
     component: BTXFinanceHome
   },
 
   {
     path: routeNames.bitxstaking,
-    title: 'BTX Pool',
+    title: 'OnePoint Pool',
     component: BitXStaking
   },
 

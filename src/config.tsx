@@ -132,7 +132,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 export const ENVIRONMENT = 'testnet';
 
-export const dAppName = 'BitX Platform';
+export const dAppName = 'AsixplusDAO';
 export const SOCIAL_WEBSITE_URL = 'https://bitxfinance.online/';
 
 // BTX Pool

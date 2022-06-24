@@ -32,7 +32,7 @@ const Navbar = () => {
         <BsNavbar.Collapse id='responsive-navbar-nav' className='nav-menu-wrap'>
           <Nav className='ml-auto'>
 
-            <NavDropdown
+            {/* <NavDropdown
               id="nav-dropdown-dark-example"
               title="Staking"
               className='custom-navbar-button custom-navbar-normal-button'
@@ -48,18 +48,18 @@ const Navbar = () => {
               </NavDropdown.Item>
               <NavDropdown.Item onClick={() => { navigate(routeNames.marestaking); }}>
                 Mare Pool
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
               {/* <NavDropdown.Item onClick={() => { navigate(routeNames.hetostaking); }}>
                 Heto Pool
               </NavDropdown.Item> */}
               
-              <NavDropdown.Item onClick={() => { navigate(routeNames.lpadstaking); }}>
+              {/* <NavDropdown.Item onClick={() => { navigate(routeNames.lpadstaking); }}>
                 Lpad Pool
               </NavDropdown.Item>
               <NavDropdown.Item onClick={() => { navigate(routeNames.cpastaking); }}>
                 Cpa Pool
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
 
             {/* <Link to={routeNames.convert} className='custom-navbar-button custom-navbar-normal-button'>
               Convert
@@ -70,9 +70,9 @@ const Navbar = () => {
             <Link to={routeNames.nftstaking} className='custom-navbar-button custom-navbar-normal-button'>
               NFT Staking
             </Link>
-            <Link to={routeNames.bitlock} className='custom-navbar-button custom-navbar-normal-button'>
+            {/* <Link to={routeNames.bitlock} className='custom-navbar-button custom-navbar-normal-button'>
               Bitlock
-            </Link>
+            </Link> */}
             <Link to={routeNames.farms} className='custom-navbar-button custom-navbar-normal-button'>
               Farms
             </Link>
