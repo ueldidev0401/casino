@@ -15,7 +15,7 @@ import { routeNames } from 'routes';
 const BTXFinanceHome = () => {
     return (
         <div className="text-center" style={{ marginBottom: "30px" }}>
-            <img className="responsive logo-animation" src={BTXFinanceHomeLogo} style={{width:"500px"}}/>
+            <img className="responsive logo-animation" src={BTXFinanceHomeLogo}/>
             <div className="button-group-bar">
                 <div className="button-group-container">
                     <Row>
