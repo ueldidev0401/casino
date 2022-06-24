@@ -29,7 +29,8 @@ const BTXFinanceHome = () => {
                         </Col> */}
                         
                         <Col xs="6" sm="3">
-                            <Link to={routeNames.nftmint}>
+                            {/* <Link to={routeNames.nftmint}> */}
+                            <Link to={""}>
                                 <div className="BTX-home-but">
                                     <img src={NFTImg} />
                                     <p>Paraswap</p>
@@ -37,7 +38,8 @@ const BTXFinanceHome = () => {
                             </Link>
                         </Col>
                         <Col xs="6" sm="3">
-                            <Link to={routeNames.nftstaking}>
+                            {/* <Link to={routeNames.nftstaking}> */}
+                            <Link to={"/"}>
                                 <div className="BTX-home-but">
                                     <img src={NFTStakingImg} />
                                     <p>Dice game</p>

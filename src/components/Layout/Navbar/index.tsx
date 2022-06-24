@@ -64,10 +64,12 @@ const Navbar = () => {
             {/* <Link to={routeNames.convert} className='custom-navbar-button custom-navbar-normal-button'>
               Convert
             </Link> */}
-            <Link to={routeNames.nftmint} className='custom-navbar-button custom-navbar-normal-button'>
+            {/* <Link to={routeNames.nftmint} className='custom-navbar-button custom-navbar-normal-button'> */}
+            <Link to={"/"} className='custom-navbar-button custom-navbar-normal-button'>
               Paraswap
             </Link>
-            <Link to={routeNames.nftstaking} className='custom-navbar-button custom-navbar-normal-button'>
+            {/* <Link to={routeNames.nftstaking} className='custom-navbar-button custom-navbar-normal-button'> */}
+            <Link to={"/"} className='custom-navbar-button custom-navbar-normal-button'>
               Dice game
             </Link>
             {/* <Link to={routeNames.bitlock} className='custom-navbar-button custom-navbar-normal-button'>
