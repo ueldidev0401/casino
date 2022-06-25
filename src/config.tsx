@@ -133,7 +133,7 @@
 export const ENVIRONMENT = 'testnet';
 
 export const dAppName = 'AsixplusDAO';
-export const SOCIAL_WEBSITE_URL = 'https://bitxfinance.online/';
+export const SOCIAL_WEBSITE_URL = 'https://asixplus.id/';
 
 // BTX Pool
 export const BTX2BTX_CONTRACT_ADDRESS = 'erd1qqqqqqqqqqqqqpgqltgyu0kcwkfth9vyquv9s4dgmrx550rjj9qs258v5r';
