@@ -174,9 +174,9 @@ const Presale = () => {
           stateInfo = 'You are not whitelisted.';
         }
       } else if (presale.state == 'NotStarted') {
-        stateInfo = 'Presale is not opened.';
+        stateInfo = 'private sale is not opened.';
       } else {
-        stateInfo = 'Presale is closed.';
+        stateInfo = 'private sale is closed.';
       }
     } else {
       stateInfo = 'You should login to buy tokens.';
@@ -247,8 +247,8 @@ const Presale = () => {
                 <div className='custom-buy-card-info color-white'>Minimum Buy Amount:&nbsp;&nbsp;{presale?.min_buy_limit} EGLD</div>
                 <div className='custom-buy-card-info color-white'>Maximum Buy Amount:&nbsp;&nbsp;{'No Limit'}</div>
 
-                <img className="logo-back-elrond" src={ElrondLogo} />
-                <img className="logo-back-bitx" src={BitXLogo} />
+                {/* <img className="logo-back-elrond" src={ElrondLogo} />
+                <img className="logo-back-bitx" src={BitXLogo} /> */}
 
                 <div style={{ paddingTop: '32px' }}>
                   <button className="custom-buy-card-buy-button" onClick={buyToken} disabled={buyButtonDisabled}>Buy {BTX_TOKEN_TICKER}</button>
