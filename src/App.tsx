@@ -1,34 +1,16 @@
 import React from 'react';
-import { DappUI, DappProvider } from '@elrondnetwork/dapp-core';
+// import { DappUI, DappProvider } from '@elrondnetwork/dapp-core';
 import { Route, Routes, BrowserRouter as Router, Navigate } from 'react-router-dom';
 import Layout from 'components/Layout';
 import PageNotFound from 'pages/PageNotFound';
-import UnlockPage from 'pages/UnlockPage';
 import { routeNames } from 'routes';
 import routes from 'routes';
-import '@elrondnetwork/dapp-core/build/index.css';
-import { TIMEOUT } from 'utils';
-import { ENVIRONMENT } from './config';
-
-
-const {
-  TransactionsToastList,
-  SignTransactionsModals,
-  NotificationModal,
-} = DappUI;
+import UnlockPage from 'pages/UnlockPage';
 
 const App = () => {
   return (
     <Router>
-      <DappProvider
-        environment={ENVIRONMENT}
-        customNetworkConfig={{ name: 'customConfig', apiTimeout: TIMEOUT }}
-        completedTransactionsDelay={200}
-      >
         <Layout>
-          <TransactionsToastList />
-          <NotificationModal />
-          <SignTransactionsModals className='custom-class-for-modals' />
           <Routes>
             <Route
               path={routeNames.unlock}
@@ -45,7 +27,6 @@ const App = () => {
             <Route path='*' element={<PageNotFound />} />
           </Routes>
         </Layout>
-      </DappProvider>
     </Router>
   );
 };

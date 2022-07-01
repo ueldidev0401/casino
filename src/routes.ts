@@ -1,128 +1,26 @@
 import { dAppName } from 'config';
-import VaultVesting from 'pages/Vesting/vaultVesting';
 import withPageTitle from './components/PageTitle';
 import BTXFinanceHome from './pages';
-import NFTStaking from './pages/NFTStaking';
-import NFTMint from './pages/NFTMint';
 import PreSale from './pages/Presale';
 import Paraswap from './pages/Paraswap';
 import DiceGame from './pages/DiceGame';
-import StakingHome from './pages/Staking';
-import BitXStaking from './pages/Staking/BitXStaking';
-import CpaStaking from './pages/Staking/CpaStaking';
-import DiceStaking from './pages/Staking/DiceStaking';
-import LpadStaking from './pages/Staking/LpadStaking';
-import MareStaking from './pages/Staking/MareStaking';
-
-import BitLock from './pages/Vesting';
-import CreateVesting from './pages/Vesting/createVesting';
 import Farms from './pages/Farms';
 
 export const routeNames = {
   home: '/',
-
   unlock: '/unlock',
-  ledger: '/ledger',
-  walletconnect: '/walletconnect',
-
-  staking: '/staking',
-  bitxstaking: '/btx-pool',
-  dicestaking: '/dice-pool',
-  marestaking: '/mare-pool',
-  // hetostaking: '/heto-pool',
-  cpastaking: '/cpa-pool',
-  lpadstaking: '/lpad-pool',
-
   presale: '/presale',
-  nftmint: '/nft-mint',
-  nftstaking: '/nft-staking',
-
-  bitlock: '/bitlock',
-  createvesting: '/bitlock/create-vesting',
-  vaultvesting: '/bitlock/vault-vesting/*',
   farms: '/farms',
   paraswap: '/paraswap',
   dicegame: '/dice-game'
 };
 
 const routes: Array<any> = [
-  {
-    path: routeNames.staking,
-    title: 'Staking',
-    component: StakingHome
-  },
-
-  {
-    path: routeNames.nftmint,
-    title: 'NFT Mint',
-    component: NFTMint
-  },
 
   {
     path: routeNames.home,
     title: 'Home',
     component: BTXFinanceHome
-  },
-
-  {
-    path: routeNames.bitxstaking,
-    title: 'One Pool',
-    component: BitXStaking
-  },
-
-  {
-    path: routeNames.dicestaking,
-    title: 'Dice Pool',
-    component: DiceStaking
-  },
-
-  {
-    path: routeNames.marestaking,
-    title: 'Mare Pool',
-    component: MareStaking
-  },
-
-  // {
-  //   path: routeNames.hetostaking,
-  //   title: 'Heto Pool',
-  //   component: HetoStaking
-  // },
-
-  {
-    path: routeNames.cpastaking,
-    title: 'Cpa Pool',
-    component: CpaStaking
-  },
-
-  {
-    path: routeNames.lpadstaking,
-    title: 'Lpad Pool',
-    component: LpadStaking
-  },
-
-  {
-    path: routeNames.bitlock,
-    title: 'Bit Lock',
-    component: BitLock
-  },
-
-  {
-    path: routeNames.createvesting,
-    title: 'Create Vesting',
-    component: CreateVesting,
-    authenticatedRoute: true,
-  },
-
-  {
-    path: routeNames.vaultvesting,
-    title: 'Vault Explorer',
-    component: VaultVesting
-  },
-
-  {
-    path: routeNames.nftstaking,
-    title: 'NFT Staking',
-    component: NFTStaking
   },
 
   {

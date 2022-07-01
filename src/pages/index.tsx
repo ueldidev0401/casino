@@ -18,7 +18,6 @@ const BTXFinanceHome = () => {
                 <div className="button-group-container">
                     <Row>
                         <Col xs="6" sm="3">
-                            {/* <Link to={routeNames.nftmint}> */}
                             <Link to={routeNames.paraswap}>
                                 <div className="BTX-home-but">
                                     <img src={Paraswap} />
@@ -27,7 +26,6 @@ const BTXFinanceHome = () => {
                             </Link>
                         </Col>
                         <Col xs="6" sm="3">
-                            {/* <Link to={routeNames.nftstaking}> */}
                             <Link to={routeNames.dicegame}>
                                 <div className="BTX-home-but">
                                     <img src={Dicegame} />
