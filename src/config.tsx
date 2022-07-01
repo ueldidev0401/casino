@@ -132,14 +132,14 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 export const ENVIRONMENT = 'testnet';
 
-export const dAppName = 'AsixplusDAO';
+export const dAppName = 'Casino Protocol';
 export const SOCIAL_WEBSITE_URL = 'https://asixplus.id/';
 
 // BTX Pool
 export const BTX2BTX_CONTRACT_ADDRESS = 'erd1qqqqqqqqqqqqqpgqltgyu0kcwkfth9vyquv9s4dgmrx550rjj9qs258v5r';
 export const BTX2BTX_CONTRACT_ABI = 'abi/btx2btx.abi.json';
 export const BTX2BTX_CONTRACT_NAME = 'BitxStake';
-export const BTX_TOKEN_TICKER = 'OnePoint';
+export const BTX_TOKEN_TICKER = 'Casino';
 export const BTX_TOKEN_ID = 'BTX-48d004';
 export const BTX_TOKEN_DECIMALS = 18;
 

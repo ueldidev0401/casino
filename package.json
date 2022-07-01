@@ -1,8 +1,8 @@
 {
-  "name": "bitxfinance",
-  "description": "BitX Platform",
+  "name": "Casino Protocol",
+  "description": "Casnio Protocol",
   "version": "0.3.0",
-  "author": "Ice <icegriffin1122@gmail.com>",
+  "author": "",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@elrondnetwork/dapp-core": "1.0.45",
