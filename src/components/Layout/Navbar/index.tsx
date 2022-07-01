@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar as BsNavbar, NavItem, Nav, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { routeNames } from 'routes';
-import logo from '../../../assets/img/asix-menuvar.png';
+import logo from '../../../assets/img/casino-topvar.png';
 import './index.scss';
 
 
@@ -23,18 +23,20 @@ const Navbar = () => {
         <BsNavbar.Toggle aria-controls='responsive-navbar-nav' style={{ background: "#D8D3D3" }} />
         <BsNavbar.Collapse id='responsive-navbar-nav' className='nav-menu-wrap'>
           <Nav className='ml-auto'>
-            <Link to={"/"} className='custom-navbar-button custom-navbar-normal-button'>
+            <Link to={routeNames.paraswap} className='custom-navbar-button custom-navbar-normal-button'>
               Paraswap
             </Link>
-            <Link to={"/"} className='custom-navbar-button custom-navbar-normal-button'>
+            <Link to={routeNames.dicegame} className='custom-navbar-button custom-navbar-normal-button'>
               Dice game
             </Link>
             <Link to={routeNames.farms} className='custom-navbar-button custom-navbar-normal-button'>
               Farms
             </Link>
-
             <Link to={routeNames.presale} className='custom-navbar-button custom-navbar-normal-button'>
               Presale
+            </Link>
+            <Link to={routeNames.bridge} className='custom-navbar-button custom-navbar-normal-button'>
+              Bridge
             </Link>
             <Link to={{ pathname: routeNames.unlock }} state={{ pastURL: location.pathname }} className='custom-navbar-button auth-button'>
               Connect Wallet

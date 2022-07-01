@@ -1,10 +1,11 @@
 import { dAppName } from 'config';
 import withPageTitle from './components/PageTitle';
-import BTXFinanceHome from './pages';
+import CasinoProtocolHome from './pages';
 import PreSale from './pages/Presale';
 import Paraswap from './pages/Paraswap';
 import DiceGame from './pages/DiceGame';
 import Farms from './pages/Farms';
+import Bridge from './pages/Bridge';
 
 export const routeNames = {
   home: '/',
@@ -12,7 +13,8 @@ export const routeNames = {
   presale: '/presale',
   farms: '/farms',
   paraswap: '/paraswap',
-  dicegame: '/dice-game'
+  dicegame: '/dice-game',
+  bridge: '/bridge'
 };
 
 const routes: Array<any> = [
@@ -20,7 +22,7 @@ const routes: Array<any> = [
   {
     path: routeNames.home,
     title: 'Home',
-    component: BTXFinanceHome
+    component: CasinoProtocolHome
   },
 
   {
@@ -43,6 +45,11 @@ const routes: Array<any> = [
     path: routeNames.dicegame,
     title: 'Dice Game',
     component: DiceGame
+  },
+  { 
+    path: routeNames.bridge,
+    title: 'Bridge',
+    component: Bridge
   }
 ];
 

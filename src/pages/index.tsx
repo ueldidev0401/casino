@@ -2,18 +2,19 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import './index.scss';
 import { Link } from 'react-router-dom';
-import BTXFinanceHomeLogo from 'assets/img/main-logo.png';
+import CasinoProtocolLogo from 'assets/img/main-logo.png';
 import Paraswap from 'assets/img/paraswap.png';
 import Dicegame from 'assets/img/dicegame.png';
 import PresaleImg from 'assets/img/presale.png';
 import FarmImg from 'assets/img/Farm.png';
+import BridgeImg from 'assets/img/bridge.png';
 
 import { routeNames } from 'routes';
 
-const BTXFinanceHome = () => {
+const CasinoProtocolHome = () => {
     return (
         <div className="text-center" style={{ marginBottom: "30px" }}>
-            <img className="responsive logo-animation" src={BTXFinanceHomeLogo}/>
+            <img className="responsive logo-animation" src={CasinoProtocolLogo}/>
             <div className="button-group-bar">
                 <div className="button-group-container">
                     <Row>
@@ -50,6 +51,14 @@ const BTXFinanceHome = () => {
                                 </div>
                             </Link>
                         </Col>
+                        <Col xs="6" sm="3">
+                            <Link to={routeNames.bridge}>
+                                <div className="BTX-home-but">
+                                    <img src={BridgeImg} />
+                                    <p>Bridge</p>
+                                </div>
+                            </Link>
+                        </Col>
                     </Row>
                 </div>
             </div>
@@ -57,4 +66,4 @@ const BTXFinanceHome = () => {
     );
 };
 
-export default BTXFinanceHome;
+export default CasinoProtocolHome;

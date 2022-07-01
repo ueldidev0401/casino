@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 import { AiFillLock, AiOutlineInfoCircle } from "react-icons/ai";
 import Modal from 'react-modal';
 import CasinoLogo from 'assets/img/token logos/onepoint.png';
-import EGLDLogo from 'assets/img/token logos/EGLD.png';
+import BUSDLogo from 'assets/img/token logos/busd.png';
 import LPFarmLogo from 'assets/img/Farm.png';
 import './index.scss';
 
@@ -105,7 +105,7 @@ const Farms = () => {
     };
 
     */
-    /** =============================== LP Farm modal (Stake BTX - EGLD) ================================== */
+    /** =============================== LP Farm modal (Stake BTX - BUSD) ================================== */
     const [showLPFarmModal, setShowLPFarmModal] = useState(false);
     const [LPFarmStakeAmount, setLPFarmStakeAmount] = useState<number | undefined>();
     const [LPFarmRelockState, setLPFarmRelockState] = useState(false);
@@ -117,7 +117,7 @@ const Farms = () => {
     const handleLPFarmStakeClicked = () => {
         const amount = LPFarmStakeAmount;
         const relock = LPFarmRelockState;
-        console.log(amount, relock, "Stake BTX - EGLD");
+        console.log(amount, relock, "Stake BTX - BUSD");
         setShowLPFarmModal(false);
     };
 
@@ -143,7 +143,7 @@ const Farms = () => {
             <div className='text-center d-flex flex-column mt-3'>
                 <span style={{ fontFamily: 'Segoe UI', fontWeight: '600', fontSize: '30px' }}>FARMS</span>
                 <div className='d-flex justify-content-center mt-3'>
-                    <span style={{ color: '#707070', width: '1000px' }}>{"LP farms allow for Casino holders to stake their LP tokens to generate rewards. Casino holders can create a LP pair through Maiar Exchange by adding liquidity, this liquidity token is created by pairing EGLD with Casino once this is done holders can then stake that LP token into the LP farms"}</span>
+                    <span style={{ color: '#707070', width: '1000px' }}>{"LP farms allow for Casino holders to stake their LP tokens to generate rewards. Casino holders can create a LP pair through Maiar Exchange by adding liquidity, this liquidity token is created by pairing BUSD with Casino once this is done holders can then stake that LP token into the LP farms"}</span>
                 </div>
             </div>
             <div className='d-flex align-items-center justify-content-center' style={{ marginTop: '30px' }}>
@@ -177,12 +177,12 @@ const Farms = () => {
                                 </div>
 
                                 <div style={{ marginLeft: '-15px', marginTop: '20px' }}>
-                                    <img src={EGLDLogo} alt='EGLD logo' width={'38px'} />
+                                    <img src={BUSDLogo} alt='BUSD logo' width={'38px'} />
                                 </div>
                             </div>
 
                             <div className='d-flex flex-column' style={{ marginLeft: '30px', gap: '5px' }}>
-                                <span style={{ fontWeight: '600', fontSize: '16px' }}> Casino - EGLD </span>
+                                <span style={{ fontWeight: '600', fontSize: '16px' }}> Casino - BUSD </span>
                                 <span> $ 0 </span>
                             </div>
                         </div>
@@ -235,10 +235,10 @@ const Farms = () => {
                         </div>
 
                         <div style={{ marginLeft: '-15px', marginTop: '20px' }}>
-                            <img src={EGLDLogo} alt='EGLD logo' width={'38px'} />
+                            <img src={BUSDLogo} alt='BUSD logo' width={'38px'} />
                         </div>
                     </div>
-                    <span style={{ fontSize: '20px', fontWeight: '600', marginLeft: '10px' }}>Stake in Casino-EGLD farm</span>
+                    <span style={{ fontSize: '20px', fontWeight: '600', marginLeft: '10px' }}>Stake in Casino-BUSD farm</span>
                 </div>
 
                 <div style={{ marginTop: '30px' }}>
