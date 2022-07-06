@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className='text-center'>
       <div>
-        <a
+        {/* <a
           {...{
             target: '_blank'
           }}
@@ -17,7 +17,7 @@ const Footer = () => {
           href={SOCIAL_WEBSITE_URL}
         >
           Made with <HeartIcon className='mx-1' /> by Asixplus.
-        </a>
+        </a> */}
       </div>
     </footer>
   );
