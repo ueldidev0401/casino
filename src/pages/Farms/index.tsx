@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 import { Row, Col } from 'react-bootstrap';
 import { AiFillLock, AiOutlineInfoCircle } from "react-icons/ai";
 import Modal from 'react-modal';
-import CasinoLogo from 'assets/img/token logos/onepoint.png';
+import CasinoLogo from 'assets/img/token logos/casino.png';
 import BUSDLogo from 'assets/img/token logos/busd.png';
 import LPFarmLogo from 'assets/img/Farm.png';
 import './index.scss';
