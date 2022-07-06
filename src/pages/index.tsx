@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import './index.scss';
 import { Link } from 'react-router-dom';
-import CasinoProtocolLogo from 'assets/img/main-logo.png';
+import CasinoProtocolLogo from 'assets/img/Casino-logo.png';
 import Paraswap from 'assets/img/paraswap.png';
 import Dicegame from 'assets/img/dicegame.png';
 import PresaleImg from 'assets/img/presale.png';
@@ -18,47 +18,47 @@ const CasinoProtocolHome = () => {
             <div className="button-group-bar">
                 <div className="button-group-container">
                     <Row>
-                        <Col xs="6" sm="3">
+                        <div className="main-page-align">
                             <Link to={routeNames.paraswap}>
                                 <div className="BTX-home-but">
                                     <img src={Paraswap} />
                                     <p>Paraswap</p>
                                 </div>
                             </Link>
-                        </Col>
-                        <Col xs="6" sm="3">
+                        </div>
+                        <div className="main-page-align">
                             <Link to={routeNames.dicegame}>
                                 <div className="BTX-home-but">
                                     <img src={Dicegame} />
                                     <p>Dice game</p>
                                 </div>
                             </Link>
-                        </Col>
-                        <Col xs="6" sm="3">
+                        </div>
+                        <div className="main-page-align">
                             <Link to={routeNames.farms}>
                                 <div className="BTX-home-but">
                                     <img src={FarmImg} />
                                     <p>LP FARMS</p>
                                 </div>
                             </Link>
-                        </Col>
+                        </div>
 
-                        <Col xs="6" sm="3">
+                        <div className="main-page-align">
                             <Link to={routeNames.presale}>
                                 <div className="BTX-home-but">
                                     <img src={PresaleImg} />
                                     <p>Private Sale</p>
                                 </div>
                             </Link>
-                        </Col>
-                        <Col xs="6" sm="3">
+                        </div>
+                        <div className="main-page-align">
                             <Link to={routeNames.bridge}>
                                 <div className="BTX-home-but">
                                     <img src={BridgeImg} />
                                     <p>Bridge</p>
                                 </div>
                             </Link>
-                        </Col>
+                        </div>
                     </Row>
                 </div>
             </div>

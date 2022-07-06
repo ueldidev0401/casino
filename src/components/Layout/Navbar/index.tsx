@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar as BsNavbar, NavItem, Nav, NavDropdown } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { routeNames } from 'routes';
-import logo from '../../../assets/img/casino-topvar.png';
+import logo from '../../../assets/img/casino-navbar.png';
 import './index.scss';
 
 
@@ -17,7 +17,7 @@ const Navbar = () => {
           className='d-flex align-items-center navbar-brand mr-0 c-logo-container'
           to={routeNames.home}
         >
-          <img src={logo} />
+          <img className="casino-navbar" src={logo}/>
         </Link>
 
         <BsNavbar.Toggle aria-controls='responsive-navbar-nav' style={{ background: "#D8D3D3" }} />
