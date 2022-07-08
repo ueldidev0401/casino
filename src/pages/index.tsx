@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import './index.scss';
 import { Link } from 'react-router-dom';
 import CasinoProtocolLogo from 'assets/img/Casino-logo.png';
-import Paraswap from 'assets/img/paraswap.png';
+import Casinoswap from 'assets/img/paraswap.png';
 import Dicegame from 'assets/img/dicegame.png';
 import PresaleImg from 'assets/img/presale.png';
 import FarmImg from 'assets/img/Farm.png';
@@ -19,10 +19,10 @@ const CasinoProtocolHome = () => {
                 <div className="button-group-container">
                     <Row>
                         <div className="main-page-align">
-                            <Link to={routeNames.paraswap}>
+                            <Link to={routeNames.casinoswap}>
                                 <div className="BTX-home-but">
-                                    <img src={Paraswap} />
-                                    <p>Paraswap</p>
+                                    <img src={Casinoswap} />
+                                    <p>Casinoswap</p>
                                 </div>
                             </Link>
                         </div>

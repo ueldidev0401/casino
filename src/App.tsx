@@ -1,5 +1,4 @@
 import React from 'react';
-// import { DappUI, DappProvider } from '@elrondnetwork/dapp-core';
 import { Route, Routes, BrowserRouter as Router, Navigate } from 'react-router-dom';
 import Layout from 'components/Layout';
 import PageNotFound from 'pages/PageNotFound';

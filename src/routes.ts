@@ -2,7 +2,7 @@ import { dAppName } from 'config';
 import withPageTitle from './components/PageTitle';
 import CasinoProtocolHome from './pages';
 import PreSale from './pages/Presale';
-import Paraswap from './pages/Paraswap';
+import Casinoswap from './pages/Casinoswap';
 import DiceGame from './pages/DiceGame';
 import Farms from './pages/Farms';
 import Bridge from './pages/Bridge';
@@ -12,7 +12,7 @@ export const routeNames = {
   unlock: '/unlock',
   presale: '/presale',
   farms: '/farms',
-  paraswap: '/paraswap',
+  casinoswap: '/casinoswap',
   dicegame: '/dice-game',
   bridge: '/bridge'
 };
@@ -37,9 +37,9 @@ const routes: Array<any> = [
     component: PreSale
   },
   { 
-    path: routeNames.paraswap,
-    title: 'Paraswap',
-    component: Paraswap
+    path: routeNames.casinoswap,
+    title: 'Casinoswap',
+    component: Casinoswap
   },
   { 
     path: routeNames.dicegame,

@@ -23,8 +23,8 @@ const Navbar = () => {
         <BsNavbar.Toggle aria-controls='responsive-navbar-nav' style={{ background: "#D8D3D3" }} />
         <BsNavbar.Collapse id='responsive-navbar-nav' className='nav-menu-wrap'>
           <Nav className='ml-auto'>
-            <Link to={routeNames.paraswap} className='custom-navbar-button custom-navbar-normal-button'>
-              Paraswap
+            <Link to={routeNames.casinoswap} className='custom-navbar-button custom-navbar-normal-button'>
+              Casinoswap
             </Link>
             <Link to={routeNames.dicegame} className='custom-navbar-button custom-navbar-normal-button'>
               Dice game
