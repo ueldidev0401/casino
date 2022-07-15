@@ -29,9 +29,9 @@ const Presale = () => {
   const [buyStateInfo, setBuyStateInfo] = React.useState<string>('');
 
   const onChangeBuyAmountInEgld = (value) => {
-    if (!presale) return;
+    // if (!presale) return;
     setBuyAmountInEgld(value);
-    setBuyAmountInEsdt(precisionRound(value * presale.exchange_rate));
+    setBuyAmountInEsdt(precisionRound(value / 0.003));
   };
   async function buyToken() {
     const tx = {
@@ -62,7 +62,8 @@ const Presale = () => {
                   <div className='custome-progress-number color-white'>{presale?.total_bought_amount_in_esdt} / {presale?.token_sale_amount} {CASINO_TOKEN_TICKER}</div>
                 </div>
 
-                <div className='custom-presale-price'>1 EGLD = {presale?.exchange_rate} {CASINO_TOKEN_TICKER}</div>
+                {/* <div className='custom-presale-price'>1 Casino = {presale?.exchange_rate} {CASINO_TOKEN_TICKER}</div> */}
+                <div className='custom-presale-price'>1 Casino = 0.003 BUSD</div>
 
               </div>
 
@@ -76,7 +77,7 @@ const Presale = () => {
                   <div className='custom-buy-card-amount-header'>Amount To Pay</div>
                   <div className='custom-buy-card-amount-container'>
                     <input className='custom-buy-card-amount-input' type='number' onChange={e => onChangeBuyAmountInEgld(Number(e.target.value))} defaultValue={buyAmountInEgld} />
-                    <span className='custom-buy-card-amount-unit color-white'>EGLD</span>
+                    <span className='custom-buy-card-amount-unit color-white'>BUSD</span>
                   </div>
                 </div>
                 <div className='custom-buy-card-amount'>
