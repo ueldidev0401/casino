@@ -1,8 +1,4 @@
-# @elrondnetwork/dapp-template
-The __Elrond dApp Template__, built using [React.js](https://reactjs.org/) and [Typescript](https://www.typescriptlang.org/).
-It's a basic implementation of [@elrondnetwork/dapp-core](https://www.npmjs.com/package/@elrondnetwork/dapp-core), providing the basics for Elrond authentication and TX signing.
-
-See [Dapp template](https://dapp-template.elrond.com/) for live demo.
+# Casino Dapp Project
 
 ## Requirements
 
@@ -23,15 +19,7 @@ From a terminal, navigate to the project folder and run:
 npm install
 ```
 
-### Step 2. Update environment
-
-Go to `App.tsx` and edit the `environment` variable according to the environment you want the app to run on.
-Valid values are `testnet`, `devnet` or `mainnet`
-
-If you need to edit the network configuration, you can pass in a `customNetworkConfig` object.
-More info about this can be found in [dapp-core documentation](https://github.com/ElrondNetwork/dapp-core)
-
-### Step 3. Running in development mode
+### Step 2. Running in development mode
 
 In the project folder run:
 
@@ -53,23 +41,3 @@ To build the project run:
 ```bash
 npm run build
 ```
-
-## Roadmap
-
-See the [open issues](https://github.com/ElrondNetwork/dapp-template/issues) for a list of proposed features (and known issues).
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-One can contribute by creating _pull requests_, or by opening _issues_ for discovered bugs or desired features.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Developers
-
-The [Elrond Team](https://elrond.com/team/).
