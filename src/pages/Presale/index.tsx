@@ -7,7 +7,7 @@ import {
 import './index.scss';
 import {
   PRESALE_CONTRACT_ADDRESS,
-  BTX_TOKEN_TICKER,
+  CASINO_TOKEN_TICKER,
 } from 'config';
 import {
   precisionRound,
@@ -59,10 +59,10 @@ const Presale = () => {
 
                 <div className='custom-progress-container'>
                   <ProgressBar now={presale && (presale.total_bought_amount_in_esdt / presale.token_sale_amount * 100)} ref={tokenSaleTargetRef} />
-                  <div className='custome-progress-number color-white'>{presale?.total_bought_amount_in_esdt} / {presale?.token_sale_amount} {BTX_TOKEN_TICKER}</div>
+                  <div className='custome-progress-number color-white'>{presale?.total_bought_amount_in_esdt} / {presale?.token_sale_amount} {CASINO_TOKEN_TICKER}</div>
                 </div>
 
-                <div className='custom-presale-price'>1 EGLD = {presale?.exchange_rate} {BTX_TOKEN_TICKER}</div>
+                <div className='custom-presale-price'>1 EGLD = {presale?.exchange_rate} {CASINO_TOKEN_TICKER}</div>
 
               </div>
 
@@ -83,7 +83,7 @@ const Presale = () => {
                   <div className='custom-buy-card-amount-header'>Amount To Get</div>
                   <div className='custom-buy-card-amount-container'>
                     <input className='custom-buy-card-amount-input' type='number' disabled={true} value={buyAmountInEsdt} />
-                    <span className='custom-buy-card-amount-unit color-white'>{BTX_TOKEN_TICKER}</span>
+                    <span className='custom-buy-card-amount-unit color-white'>{CASINO_TOKEN_TICKER}</span>
                   </div>
                 </div>
 
@@ -91,7 +91,7 @@ const Presale = () => {
                 <div className='custom-buy-card-info color-white'>Maximum Buy Amount:&nbsp;&nbsp;{'No Limit'}</div>
 
                 <div style={{ paddingTop: '32px' }}>
-                  <button className="custom-buy-card-buy-button" onClick={buyToken} disabled={buyButtonDisabled}>Buy {BTX_TOKEN_TICKER}</button>
+                  <button className="custom-buy-card-buy-button" onClick={buyToken} disabled={buyButtonDisabled}>Buy {CASINO_TOKEN_TICKER}</button>
                   <div className='custom-buy-card-buy-state-info'>{buyStateInfo}</div>
                 </div>
               </div>

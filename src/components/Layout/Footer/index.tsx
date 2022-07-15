@@ -1,9 +1,6 @@
 import React from 'react';
 import { ReactComponent as HeartIcon } from '../../../assets/img/heart.svg';
 import './index.scss';
-import {
-  SOCIAL_WEBSITE_URL
-} from '../../../config';
 
 const Footer = () => {
   return (
