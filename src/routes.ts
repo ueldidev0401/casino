@@ -6,6 +6,7 @@ import Casinoswap from './pages/Casinoswap';
 import DiceGame from './pages/DiceGame';
 import Farms from './pages/Farms';
 import Bridge from './pages/Bridge';
+import Bettingverse from './pages/Bettingverse';
 
 export const routeNames = {
   home: '/',
@@ -14,7 +15,8 @@ export const routeNames = {
   farms: '/farms',
   casinoswap: '/casinoswap',
   dicegame: '/dice-game',
-  bridge: '/bridge'
+  bridge: '/bridge',
+  bettingverse: '/bettingverse'
 };
 
 const routes: Array<any> = [
@@ -50,6 +52,11 @@ const routes: Array<any> = [
     path: routeNames.bridge,
     title: 'Bridge',
     component: Bridge
+  },
+  { 
+    path: routeNames.bettingverse,
+    title: 'Bettingverse',
+    component: Bettingverse
   }
 ];
 
