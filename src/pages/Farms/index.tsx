@@ -85,50 +85,21 @@ const Farms = () => {
     ];
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-    const BTXTotalBalance = 3000; // Current Balance of BTX
-
-    /** =============================== staking Farm modal (Stake BTX / LKMEX) ================================== */
-    /*
-    const [showStakingFarmModal, setShowStakingFarmModal] = useState(false);
-    const [stakingFarmStakeAmount, setStakingFarmStakeAmount] = useState<number | undefined>();
-    const [stakingFarmRelockState, setStakingFarmRelockState] = useState(false);
-
-    const handleStakingFarmSliderChange = (num: any) => {
-        setStakingFarmStakeAmount(BTXTotalBalance / 100 * num);
-    };
-
-    const handleStakingFarmStakeClicked = () => {
-        const amount = stakingFarmStakeAmount;
-        const relock = stakingFarmRelockState;
-        console.log(amount, relock, "Stake BTX / LKMEX");
-        setShowStakingFarmModal(false);
-    };
-
-    */
-    /** =============================== LP Farm modal (Stake BTX - BUSD) ================================== */
+    const CasinoTotalBalance = 3000; 
     const [showLPFarmModal, setShowLPFarmModal] = useState(false);
     const [LPFarmStakeAmount, setLPFarmStakeAmount] = useState<number | undefined>();
     const [LPFarmRelockState, setLPFarmRelockState] = useState(false);
 
     const handleLPFarmSliderChange = (num: any) => {
-        setLPFarmStakeAmount(BTXTotalBalance / 100 * num);
+        setLPFarmStakeAmount(CasinoTotalBalance / 100 * num);
     };
 
     const handleLPFarmStakeClicked = () => {
         const amount = LPFarmStakeAmount;
         const relock = LPFarmRelockState;
-        console.log(amount, relock, "Stake BTX - BUSD");
         setShowLPFarmModal(false);
     };
 
-
-
-    /** ============================= harvest all ============================================================ */
-    /*
-    const handleStakingFarmHarvestAll = () => {
-        console.log("staking farm harvest all");
-    };
-    */
     const handleLPFarmHarvestAll = () => {
         console.log("LP Farm harvest all");
     };
@@ -173,7 +144,7 @@ const Farms = () => {
                         <div className='d-flex align-items-center'>
                             <div className='d-flex'>
                                 <div>
-                                    <img src={CasinoLogo} alt='BTX logo' width={'38px'} />
+                                    <img src={CasinoLogo} alt='Casino Logo' width={'38px'} />
                                 </div>
 
                                 <div style={{ marginLeft: '-15px', marginTop: '20px' }}>
@@ -192,10 +163,6 @@ const Farms = () => {
                             <span style={{ fontSize: '14px', color: '#B5B5B5' }}> APR </span>
                             <div className='d-flex align-items-center'>
                                 <span> 1000%</span>
-                                {/* *
-                                <span> / </span>
-                                <AiFillLock className='ml-2 mr-1' />
-                                <span> 100%</span> */}
                             </div>
                         </div>
                     </Col>
@@ -247,7 +214,7 @@ const Farms = () => {
 
                 <div className='d-flex mt-1' style={{ justifyContent: 'right', color: '#AEAEAE' }}>
                     <span>Balance:</span>
-                    <span className='ml-2'>{BTXTotalBalance + ' Casino'}</span>
+                    <span className='ml-2'>{CasinoTotalBalance + ' Casino'}</span>
                 </div>
 
                 <div className='modal-divider mt-3' />
@@ -257,7 +224,7 @@ const Farms = () => {
                         getAriaLabel={(index) => (index === 0 ? 'Minimum price' : 'Maximum price')}
                         defaultValue={0}
                         marks={marks}
-                        value={LPFarmStakeAmount / BTXTotalBalance * 100}
+                        value={LPFarmStakeAmount / CasinoTotalBalance * 100}
                         onChange={(e, num) => handleLPFarmSliderChange(num)}
                     // step={25}
                     // valueLabelDisplay="on"
@@ -280,7 +247,7 @@ const Farms = () => {
                     <label htmlFor='lockRewards' style={{ cursor: 'pointer' }}>
                         <div className='d-flex align-items-center'>
                             <AiFillLock className='mr-1' />
-                            <span>Lock rewards for: <span style={{ color: '#00C4A7' }}>1000% LKMEX</span>{/**  vs <span style={{ color: '#FEE277' }}>21% BTX</span>*/}</span>
+                            <span>Lock rewards for: <span style={{ color: '#00C4A7' }}>1000% LKMEX</span></span>
                         </div>
                     </label>
                 </div>

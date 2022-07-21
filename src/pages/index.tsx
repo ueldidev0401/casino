@@ -21,7 +21,7 @@ const CasinoProtocolHome = () => {
                     <Row>
                         <Col xs="6" sm="2">
                             <Link to={routeNames.casinoswap}>
-                                <div className="BTX-home-but">
+                                <div className="Casino-home-but">
                                     <img src={Casinoswap} />
                                     <p>Casinoswap</p>
                                 </div>
@@ -29,7 +29,7 @@ const CasinoProtocolHome = () => {
                         </Col>
                         <Col xs="6" sm="2">
                             <Link to={routeNames.dicegame}>
-                                <div className="BTX-home-but">
+                                <div className="Casino-home-but">
                                     <img src={Dicegame} />
                                     <p>Dice game</p>
                                 </div>
@@ -37,7 +37,7 @@ const CasinoProtocolHome = () => {
                         </Col>
                         <Col xs="6" sm="2">
                             <Link to={routeNames.farms}>
-                                <div className="BTX-home-but">
+                                <div className="Casino-home-but">
                                     <img src={FarmImg} />
                                     <p>LP FARMS</p>
                                 </div>
@@ -46,7 +46,7 @@ const CasinoProtocolHome = () => {
 
                         <Col xs="6" sm="2">
                             <Link to={routeNames.presale}>
-                                <div className="BTX-home-but">
+                                <div className="Casino-home-but">
                                     <img src={PresaleImg} />
                                     <p>Private Sale</p>
                                 </div>
@@ -54,7 +54,7 @@ const CasinoProtocolHome = () => {
                         </Col>
                         <Col xs="6" sm="2">
                             <Link to={routeNames.bridge}>
-                                <div className="BTX-home-but">
+                                <div className="Casino-home-but">
                                     <img src={BridgeImg} />
                                     <p>Bridge</p>
                                 </div>
@@ -63,7 +63,7 @@ const CasinoProtocolHome = () => {
 
                         <Col xs="6" sm="2">
                             <Link to={routeNames.bettingverse}>
-                                <div className="BTX-home-but">
+                                <div className="Casino-home-but">
                                     <img src={BettingverseImg} />
                                     <p>Betting verse</p>
                                 </div>
